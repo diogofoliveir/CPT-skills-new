@@ -1,6 +1,6 @@
 <?php 
 
-require_once 'shortcodegallery.php'; 
+
 
 
 
@@ -30,6 +30,7 @@ Author URI: http://ma.tt/
 // }
 // add_filter( 'the_title', 'wporg_filter_title' );
 
+// require_once "fonction/shortcodegallery.php"; 
 
 add_action('init', 'wpc_cpt', 10);
 
@@ -290,4 +291,48 @@ register_taxonomy('Savoir être','CTP',array(
     'rewrite' => array( 'slug' => 'Savoir être' ),
   ));
 }
+
+
+
+
+ 
+ 
+
+function shortcode_bienvenue($atts){
+  $atts = shortcode_atts(array(
+    'id'=> '',
+    'height'=> 350
+  ),$atts);
+  extract($atts);
+  return '<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="">
+    <img src="" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="">
+    <img src="" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>';
+  
+}
+add_shortcode('bienvenue', 'shortcode_bienvenue');
+
 
