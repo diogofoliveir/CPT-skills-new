@@ -293,46 +293,63 @@ register_taxonomy('Savoir être','CTP',array(
 }
 
 
-
-
  
+// The Query
+$the_query = new WP_Query( $args );
  
-
-function shortcode_bienvenue($atts){
-  $atts = shortcode_atts(array(
-    'id'=> '',
-    'height'=> 350
-  ),$atts);
-  extract($atts);
-  return '<div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="">
-    <img src="" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="img_lights.jpg">
-    <img src="" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="">
-    <img src="" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>';
-  
+// The Loop
+if ( $the_query->have_posts() ) {
+    echo '<ul>';
+    while ( $the_query->have_posts() ) {
+        $the_query->the_post();
+        echo '<li>' . get_the_title() . '</li>';
+    }
+    echo '</ul>';
+} else {
+    // no posts found
 }
-add_shortcode('bienvenue', 'shortcode_bienvenue');
+/* Restore original Post Data */
+wp_reset_postdata();
+
+
+ 
+ 
+
+// function shortcode_bienvenue($atts){
+//   $atts = shortcode_atts(array(
+//     'id'=> '',
+//     'height'=> 350
+//   ),$atts);
+//   extract($atts);
+//   return '<div class="gallery">
+//   <a target="_blank" href="img_5terre.jpg">
+//     <img src="" alt="" width="600" height="400">
+//   </a>
+//   <div class="desc">Add a description of the image here</div>
+// </div>
+
+// <div class="gallery">
+//   <a target="_blank" href="">
+//     <img src="" alt="" width="600" height="400">
+//   </a>
+//   <div class="desc">Add a description of the image here</div>
+// </div>
+
+// <div class="gallery">
+//   <a target="_blank" href="img_lights.jpg">
+//     <img src="" alt="" width="600" height="400">
+//   </a>
+//   <div class="desc">Add a description of the image here</div>
+// </div>
+
+// <div class="gallery">
+//   <a target="_blank" href="">
+//     <img src="" alt="" width="600" height="400">
+//   </a>
+//   <div class="desc">Add a description of the image here</div>
+// </div>';
+  
+// }
+// add_shortcode('bienvenue', 'shortcode_bienvenue');
 
 
