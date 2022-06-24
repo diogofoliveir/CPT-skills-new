@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wg');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeec;
+}
+
+.container {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
