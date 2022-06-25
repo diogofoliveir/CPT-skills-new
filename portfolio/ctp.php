@@ -1,6 +1,6 @@
 <?php 
 
-require_once 'shortcodegallery.php'; 
+
 
 
 
@@ -30,6 +30,7 @@ Author URI: http://ma.tt/
 // }
 // add_filter( 'the_title', 'wporg_filter_title' );
 
+// require_once "fonction/shortcodegallery.php"; 
 
 add_action('init', 'wpc_cpt', 10);
 
@@ -290,4 +291,82 @@ register_taxonomy('Savoir être','CTP',array(
     'rewrite' => array( 'slug' => 'Savoir être' ),
   ));
 }
+
+
+ 
+// The Query
+$the_query = new WP_Query( $args );
+ 
+// The Loop
+if ( $the_query->have_posts() ) {
+    echo '<ul>';
+    while ( $the_query->have_posts() ) {
+        $the_query->the_post();
+        echo '<li>' . get_the_title() . '</li>';
+    }
+    echo '</ul>';
+} else {
+    // no posts found
+}
+/* Restore original Post Data */
+wp_reset_postdata();
+
+function have_posts() {
+  global $wp_query;
+  return $wp_query->have_posts();
+}
+
+
+
+
+
+function get_post_meta( $post_id, $key = '', $single = false ) {
+  return get_metadata( 'post', $post_id, $key, $single );
+}
+
+function get_the_ID() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+  $post = get_post();
+  return ! empty( $post ) ? $post->ID : false;
+}
+
+ 
+ 
+
+// function shortcode_bienvenue($atts){
+//   $atts = shortcode_atts(array(
+//     'id'=> '',
+//     'height'=> 350
+//   ),$atts);
+//   extract($atts);
+//   return '<div class="gallery">
+//   <a target="_blank" href="img_5terre.jpg">
+//     <img src="" alt="" width="600" height="400">
+//   </a>
+//   <div class="desc">Add a description of the image here</div>
+// </div>
+
+// <div class="gallery">
+//   <a target="_blank" href="">
+//     <img src="" alt="" width="600" height="400">
+//   </a>
+//   <div class="desc">Add a description of the image here</div>
+// </div>
+
+// <div class="gallery">
+//   <a target="_blank" href="img_lights.jpg">
+//     <img src="" alt="" width="600" height="400">
+//   </a>
+//   <div class="desc">Add a description of the image here</div>
+// </div>
+
+// <div class="gallery">
+//   <a target="_blank" href="">
+//     <img src="" alt="" width="600" height="400">
+//   </a>
+//   <div class="desc">Add a description of the image here</div>
+// </div>';
+  
+// }
+// add_shortcode('bienvenue', 'shortcode_bienvenue');
+
 
