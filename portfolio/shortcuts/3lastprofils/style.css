@@ -54,3 +54,9 @@ body
     max-width: 100%;
     border-radius: 4px;
 }
+.container .card .content
+{
+   position: relative;
+   margin-top: -140px;
+   padding: 10px 15px;
+}
