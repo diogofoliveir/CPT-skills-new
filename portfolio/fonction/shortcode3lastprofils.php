@@ -28,7 +28,7 @@ foreach ($postslist as $post) :  setup_postdata($post); ?>
         <ul>
             <?php
                 $recentPosts = new WP_Query();
-                $recentPosts->query('showposts=10');//value to modify to choose the number of articles
+                $recentPosts->query('showposts=3');//value to modify to choose the number of articles
             ?>
             <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
                 <li class="item_list">
