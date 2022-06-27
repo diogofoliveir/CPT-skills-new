@@ -22,19 +22,26 @@ body
     flex-wrap: wrap;
     padding: 30px;
 }
-.container .card
+.container .profile
 {
     position: relative;
     max width: 300px;
     height: 420px;
+    background: #DAEAF1;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0,5);
+    transition: 0.3s ease-in-out;
 }
-.container .card .imgbx
+.container .profile .imgbx
 {
     position: relative;
     width: 260px;
     height: 260px;
 }
-.container .card .imgbx img
+.container .profile .imgbx img
 {
     max-width: 100%;
     border-radius: 4px;
