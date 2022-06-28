@@ -4,7 +4,7 @@
 
 
 function shortcode_bienvenue(){
-    $mess = "Bienvenue chez moi";
+    $mess = 'eewfwdcsafe';
     return $mess;
     
 }
