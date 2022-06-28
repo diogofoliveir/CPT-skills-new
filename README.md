@@ -24,7 +24,7 @@ Il trouverait pratique de pouvoir gérer les compétences via le menu WP pour ch
 
 #### Technologies
 
--Wordpress
+- Wordpress
 - PHP
 - HTML
 - CSS
