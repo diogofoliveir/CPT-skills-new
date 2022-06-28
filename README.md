@@ -2,7 +2,8 @@
 
 <img src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-GIF.gif"></img>
 
-> C'est un plugin qui vous permet d'ajouter un menu dans le dashboard permettant la gestion des compétences
+
+> Ce plugin vous permet d'ajouter un menu dans le dashboard permettant la gestion des compétences
 
 ---
 
