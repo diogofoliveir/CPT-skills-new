@@ -37,13 +37,16 @@ Il trouverait pratique de pouvoir gérer les compétences via le menu WP pour ch
 
 Voici la démarche à suivre :
 
-Commencez par vous connecter sur votre administration WordPress
-Cliquez sur l’onglet « Extension » qui se trouve dans le menu à gauche
-Sélectionnez « Ajouter »
-Selectionnez "Téléverser une extension"
-Une fois le plugin trouvé, cliquez sur « Installer maintenant » puis confirmez en sélectionnant « Ok »
-Vous devriez voir affiché « En cours d’installation ». Attendez quelques secondes le temps du processus
-Sélectionnez maintenant « Activer l’extension » qui se trouve en bas à gauche
+- Commencez par vous connecter sur votre administration WordPress
+- Cliquez sur l’onglet « Extension » qui se trouve dans le menu à gauche
+- Sélectionnez « Ajouter »
+- Selectionnez "Téléverser une extension"
+- Une fois le plugin trouvé, cliquez sur « Installer maintenant » puis confirmez en sélectionnant « Ok »
+Vous devriez voir affiché « En cours d’installation ».
+- Attendez quelques secondes le temps du processus
+- Sélectionnez maintenant « Activer l’extension » qui se trouve en bas à gauche
+
+et voila! vous avez activé le plugin :)
 
 ## Planning
 
