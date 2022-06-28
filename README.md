@@ -12,7 +12,6 @@
 
 - [Description](#description)
 - [Comment l'utiliser](#commentutiliser)
-- [References](#references)
 - [Planning](#planning)
 - [Collaborateurs](#collaborateurs)
 
@@ -45,9 +44,6 @@ Selectionnez "Téléverser une extension"
 Une fois le plugin trouvé, cliquez sur « Installer maintenant » puis confirmez en sélectionnant « Ok »
 Vous devriez voir affiché « En cours d’installation ». Attendez quelques secondes le temps du processus
 Sélectionnez maintenant « Activer l’extension » qui se trouve en bas à gauche
-
-## References
-[Back To The Top](#read-me-template)
 
 ## Planning
 
