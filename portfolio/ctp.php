@@ -290,83 +290,142 @@ register_taxonomy('Savoir être','CTP',array(
     'query_var' => true,
     'rewrite' => array( 'slug' => 'Savoir être' ),
   ));
-}
+}  
 
 
- 
-// The Query
-$the_query = new WP_Query( $args );
- 
-// The Loop
-if ( $the_query->have_posts() ) {
-    echo '<ul>';
-    while ( $the_query->have_posts() ) {
-        $the_query->the_post();
-        echo '<li>' . get_the_title() . '</li>';
-    }
-    echo '</ul>';
+// On créer une nouvelle requête
+$query = new WP_Query(array(
+  'name' => 'gallery',
+  
+));
+
+// On affiche le contenu sur la même logique que la boucle principale
+if ( $query->have_posts() ) {
+  echo '<ul>';
+  while ( $query->have_posts() ) {
+      $query->the_post();
+      echo '<li>' . get_the_title() . '</li>';
+  }
+  echo '</ul>';
 } else {
-    // no posts found
+  // no posts found
 }
-/* Restore original Post Data */
+/* On utilise la fonction wp_reset_postdata pour restaurer la requête principale (pour éviter des bugs) */
 wp_reset_postdata();
 
-function have_posts() {
-  global $wp_query;
-  return $wp_query->have_posts();
-}
 
-
-
-
-
-function get_post_meta( $post_id, $key = '', $single = false ) {
-  return get_metadata( 'post', $post_id, $key, $single );
-}
-
-function get_the_ID() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
-  $post = get_post();
-  return ! empty( $post ) ? $post->ID : false;
-}
-
- 
- 
-
-// function shortcode_bienvenue($atts){
-//   $atts = shortcode_atts(array(
-//     'id'=> '',
-//     'height'=> 350
-//   ),$atts);
-//   extract($atts);
-//   return '<div class="gallery">
-//   <a target="_blank" href="img_5terre.jpg">
-//     <img src="" alt="" width="600" height="400">
-//   </a>
-//   <div class="desc">Add a description of the image here</div>
-// </div>
-
-// <div class="gallery">
-//   <a target="_blank" href="">
-//     <img src="" alt="" width="600" height="400">
-//   </a>
-//   <div class="desc">Add a description of the image here</div>
-// </div>
-
-// <div class="gallery">
-//   <a target="_blank" href="img_lights.jpg">
-//     <img src="" alt="" width="600" height="400">
-//   </a>
-//   <div class="desc">Add a description of the image here</div>
-// </div>
-
-// <div class="gallery">
-//   <a target="_blank" href="">
-//     <img src="" alt="" width="600" height="400">
-//   </a>
-//   <div class="desc">Add a description of the image here</div>
-// </div>';
-  
+// function have_posts() {
+//   global $wp_query;
+//   return $wp_query->have_posts();
 // }
-// add_shortcode('bienvenue', 'shortcode_bienvenue');
+
+
+
+
+
+// function get_post_meta( $post_id, $key = '', $single = false ) {
+//   return get_metadata( 'post', $post_id, $key, $single );
+// }
+
+
+
+
+// function get_the_ID() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+//   $post = get_post();
+//   return ! empty( $post ) ? $post->ID : false;
+// }
+
+ 
+ 
+  function rpthem_enqueue(){
+    wp_enqueue_style( 'bootstrapcss',"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css", false, null );
+  
+    wp_enqueue_script( 'bootstapjs', "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js", false, null );
+  }
+  
+  add_action( 'wp_enqueue_scripts', 'rpthem_enqueue', 1);
+
+  define ('DIRECTORIES_IMG',"wp-content/plugins/portfolio/shortcodes/gallery/images/");
+
+  function shortcode_bienvenue($atts){
+  $atts = shortcode_atts(array(
+    'id'=> '',
+    'height'=> 350
+  ),$atts);
+  extract($atts);
+  return 
+  '<div class="row row-cols-1 row-cols-md-4 g-4" style="width: 80rem; ;">
+  <div class="col">
+    <div class="card border border-light">
+      <img src="'.DIRECTORIES_IMG.'zlatan.webp" class="card-img-top rounded-5" style="height: 250px ;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title ">zlatan</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border border-light">
+      <img src="'.DIRECTORIES_IMG.'messi.jpg" class="card-img-top rounded-5" alt="..."/>
+      <div class="card-body">
+        <h5 class="card-title">Messi</h5>
+        <p class="card-text"> </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border border-light">
+      <img src="'.DIRECTORIES_IMG.'neymar.jpeg" class="card-img-top rounded-5" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Neymar</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border border-light">
+      <img src="'.DIRECTORIES_IMG.'ronaldo.jpg" class="card-img-top rounded-5" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ronaldo</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+      <div class="card border border-light">
+        <img src="'.DIRECTORIES_IMG.'ramos.jpg" class="card-img-top rounded-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">S. Ramos</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div><div class="col">
+      <div class="card border border-light">
+        <img src="'.DIRECTORIES_IMG.'Mbappe.jpg" class="card-img-top rounded-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mbappe</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div><div class="col">
+      <div class="card border border-light">
+        <img src="'.DIRECTORIES_IMG.'zidane.jpeg" class="card-img-top rounded-5"  style=" height:250px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Zidane</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div><div class="col">
+      <div class="card border border-light">
+        <img src="'.DIRECTORIES_IMG.'guardiola.jpg" class="card-img-top rounded-5 alt="...">
+        <div class="card-body">
+          <h5 class="card-title">P. Gardiola</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+</div>';
+}
+add_shortcode('zlatan', 'shortcode_bienvenue');
 
 
