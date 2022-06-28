@@ -311,6 +311,23 @@ if ( $the_query->have_posts() ) {
 /* Restore original Post Data */
 wp_reset_postdata();
 
+function have_posts() {
+  global $wp_query;
+  return $wp_query->have_posts();
+}
+
+
+
+
+
+function get_post_meta( $post_id, $key = '', $single = false ) {
+  return get_metadata( 'post', $post_id, $key, $single );
+}
+
+function get_the_ID() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+  $post = get_post();
+  return ! empty( $post ) ? $post->ID : false;
+}
 
  
  
