@@ -24,7 +24,7 @@ body
 .container .profile
 {
     position: relative;
-    max width: 300px;
+    max-width: 300px;
     height: 215px;
     background: #F9F2ED;
     margin: 30px 10px;
@@ -59,7 +59,7 @@ body
    margin-top: -140px;
    padding: 10px 15px;
    text-align: center;
-   color: #black;
+   color: black;
    visibility: hidden;
    opacity: 0;
    transition: 0.3s ease-in-out;

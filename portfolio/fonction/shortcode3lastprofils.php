@@ -21,7 +21,7 @@ foreach ($postslist as $post) :  setup_postdata($post); ?>
 <?php endforeach; ?>
 </ul>
 
-
+<!-- test -->
 <div class="news">
     <h3>Derniers articles</h3>
     <div class="last-article">
