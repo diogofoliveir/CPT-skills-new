@@ -1,7 +1,7 @@
 # CPT-skills-new
 
 # Plugin CPT-skills-new 
-
+<img src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-GIF.gif"
 
 > C'est un plugin qui vous permet d'ajouter un menu dans le dashboard permettant la gestion des compétences
 
@@ -10,10 +10,10 @@
 ### Table des contenues
 
 - [Description](#description)
-- [How To Use](#how-to-use)
+- [comment l'utiliser](#commentutiliser)
 - [References](#references)
-- [License](#license)
-- [Author Info](#author-info)
+- [Planning](#planning)
+- [Collaborateurs](#collaborateurs)
 
 ---
 
@@ -33,33 +33,32 @@ Il trouverait pratique de pouvoir gérer les compétences via le menu WP pour ch
 
 ---
 
-## How To Use
+## Comment l'utiliser
 
-#### Installation
+Voici la démarche à suivre :
 
-
-
-#### API Reference
-
-```html
-    <p>dummy code</p>
-```
-[Back To The Top](#read-me-template)
-
----
+Commencez par vous connecter sur votre administration WordPress
+Cliquez sur l’onglet « Extension » qui se trouve dans le menu à gauche
+Sélectionnez « Ajouter »
+Selectionnez "Téléverser une extension"
+Une fois le plugin trouvé, cliquez sur « Installer maintenant » puis confirmez en sélectionnant « Ok »
+Vous devriez voir affiché « En cours d’installation ». Attendez quelques secondes le temps du processus
+Sélectionnez maintenant « Activer l’extension » qui se trouve en bas à gauche
 
 ## References
 [Back To The Top](#read-me-template)
 
 ---
 
-## License
+## Planning
+
+Projet à finir avant le mardi 28 juin 2022
 
 [Back To The Top](#read-me-template)
 
 ---
 
-## Author Info
+## Collaborateurs
 
 - Diago Dryson - [@jamesqquick](https://github.com/diagodryson)
 - Diogo Ferreira Oliveira - [@diogofoliveir](https://github.com/diogofoliveir)
