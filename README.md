@@ -11,7 +11,7 @@
 ### Table des contenues
 
 - [Description](#description)
-- [Comment l'utiliser](#commentutiliser)
+- [Comment utiliser](#commentutiliser)
 - [Planning](#planning)
 - [Collaborateurs](#collaborateurs)
 
@@ -33,7 +33,7 @@ Il trouverait pratique de pouvoir gérer les compétences via le menu WP pour ch
 
 ---
 
-## Comment l'utiliser
+## Comment utiliser
 
 Voici la démarche à suivre :
 
