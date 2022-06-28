@@ -1,7 +1,7 @@
 # CPT-skills-new
 
 # Plugin CPT-skills-new 
-<img src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-GIF.gif"</img>
+<img src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-GIF.gif" </img>
 
 > C'est un plugin qui vous permet d'ajouter un menu dans le dashboard permettant la gestion des compétences
 
