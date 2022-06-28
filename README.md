@@ -1,5 +1,3 @@
-# CPT-skills-new
-
 # Plugin CPT-skills-new 
 
 <img src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-GIF.gif"></img>
