@@ -11,7 +11,7 @@
 ### Table des contenues
 
 - [Description](#description)
-- [comment l'utiliser](#commentutiliser)
+- [Comment l'utiliser](#commentutiliser)
 - [References](#references)
 - [Planning](#planning)
 - [Collaborateurs](#collaborateurs)
@@ -49,8 +49,6 @@ Sélectionnez maintenant « Activer l’extension » qui se trouve en bas à gau
 ## References
 [Back To The Top](#read-me-template)
 
----
-
 ## Planning
 
 Projet à finir avant le mardi 28 juin 2022
@@ -61,7 +59,7 @@ Projet à finir avant le mardi 28 juin 2022
 
 ## Collaborateurs
 
-- Diago Dryson - [@jamesqquick](https://github.com/diagodryson)
+- Diago Dryson - [@diagodryson](https://github.com/diagodryson)
 - Diogo Ferreira Oliveira - [@diogofoliveir](https://github.com/diogofoliveir)
 - Gabriel Ferreira - [@gabsvn](https://github.com/gabsvn)
 - Olivier Cardona - [@ocardo](https://github.com/ocardo)
