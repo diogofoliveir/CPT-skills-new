@@ -62,6 +62,7 @@ Projet à finir avant le mardi 28 juin 2022
 - Diogo Ferreira Oliveira - [@diogofoliveir](https://github.com/diogofoliveir)
 - Gabriel Ferreira - [@gabsvn](https://github.com/gabsvn)
 - Olivier Cardona - [@ocardo](https://github.com/ocardo)
+- Aniello - [@iniello](https://github.com/iniello)
 
 [Back To The Top](#read-me-template)
 
