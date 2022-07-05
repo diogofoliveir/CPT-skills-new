@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Plugin CPT-skills-new 
 
 <img src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-GIF.gif"></img>
@@ -97,4 +96,3 @@ Projet à finir avant le mardi 28 juin 2022
 <div align="center">
 <img alt="CPT Portfolio Readme" src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-GIF.gif"> </img>
 </div>
->>>>>>> GABSVN
