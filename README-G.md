@@ -2,7 +2,8 @@
 
 <img src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-GIF.gif"></img>
 
-> C'est un plugin qui vous permet d'ajouter un menu dans le dashboard permettant la gestion des compétences
+
+> Ce plugin vous permet d'ajouter un menu dans le dashboard permettant la gestion des compétences
 
 ---
 
@@ -24,7 +25,7 @@ Il trouverait pratique de pouvoir gérer les compétences via le menu WP pour ch
 
 #### Technologies
 
--Wordpress
+- Wordpress
 - PHP
 - HTML
 - CSS
@@ -66,3 +67,32 @@ Projet à finir avant le mardi 28 juin 2022
 
 [Back To The Top](#read-me-template)
 
+=======
+
+
+
+# CPT-skills-new
+
+<h1 align="center">Awesome GitHub Profile README 
+<a href="https://github.com/GABSVN/CPT-skills-new" target="_blank"><img src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-Digital-GIF.gif" alt="CPT - skills news - Best curated list of portfolios developers readme, updated every 15 min | Product Hunt" style="width: 200px; height: 44px;" width="200" height="44" /></a></h1>
+<br>
+
+<img alt="CPT Portfolio Readme" src="GDSplug/Logos/CPTskills-CollectifEthique LOGO (white).png"> </img>
+
+<br>
+
+<div align="center">
+<img alt="CPT Portfolio Readme" src="GDSplug/Logos/CPTskills-CollectifEthique LOGO.png"> </img>
+</div>
+
+<br>
+
+<div align="center">
+<img alt="CPT Portfolio Readme" src="GDSplug/Logos/CPTskills-CollectifEthique-Digital-logo.png"> </img>
+</div>
+
+<br>
+
+<div align="center">
+<img alt="CPT Portfolio Readme" src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-GIF.gif"> </img>
+</div>
