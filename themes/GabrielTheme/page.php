@@ -18,7 +18,7 @@ get_header();
  }
  ?>
 </section>
-<?php endwhile; endif; ?>
+<?php (endwhile; endif); ?>
 <?php
 get_footer();
 ?>
