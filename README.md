@@ -2,9 +2,6 @@
 
 <img src="GDSplug/Logos/GIF/CPTskills-CollectifEthique-GIF.gif"></img>
 
-
-> Ce plugin vous permet d'ajouter un menu dans le dashboard permettant la gestion des compétences
-
 ---
 
 ### Table des contenues
@@ -18,9 +15,7 @@
 
 ## Description
 
-Nos portfolios ont plu au client. Il voudrait proposer cette solution à certains de leurs client·e·s indépendant·e·s et aussi pour lui-même. 
-Il trouverait pratique de pouvoir gérer les compétences via le menu WP pour chaque profil. Il voudrait aussi un système de navigation par profils sur une galerie permettant d’afficher le détail d’une personne et ses compétences. 
- Ce qu’il voudrait donc, ce serait d’avoir un plugin à commercialiser qui permet d’implémenter des portfolios sur n’importe quel site WP avec une gestion des compétences.
+Ce plugin vous permet d'ajouter un menu dans le dashboard permettant la gestion des compétences
 
 
 #### Technologies
