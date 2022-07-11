@@ -11,20 +11,20 @@ License: GPLv2
 */
 
 
-function kinsta_register_post_type() {
+function GABSVN_register_post_type() {
 
 
     $labels = array(
-        'name' => __( ‘Books’, ‘kinsta’ ),
-        'singular_name' => __( 'Book', ‘kinsta’ ),
-        'add_new' => __( 'New Book', ‘kinsta’ ),
-        'add_new_item' => __( 'Add New Book', ‘kinsta’ ),
-        'edit_item' => __( 'Edit Book', ‘kinsta’ ),
-        'new_item' => __( 'New Book', ‘kinsta’ ),
-        'view_item' => __( 'View Books', ‘kinsta’ ),
-        'search_items' => __( 'Search Books', ‘kinsta’ ),
-        'not_found' =>  __( 'No Books Found', ‘kinsta’ ),
-        'not_found_in_trash' => __( 'No Books found in Trash', ‘kinsta’ ),
+        'name' => __( ‘Books’, ‘GABSVN’ ),
+        'singular_name' => __( 'Book', ‘GABSVN’ ),
+        'add_new' => __( 'New Book', ‘GABSVN’ ),
+        'add_new_item' => __( 'Add New Book', ‘GABSVN’ ),
+        'edit_item' => __( 'Edit Book', ‘GABSVN’ ),
+        'new_item' => __( 'New Book', ‘GABSVN’ ),
+        'view_item' => __( 'View Books', ‘GABSVN’ ),
+        'search_items' => __( 'Search Books', ‘GABSVN’ ),
+        'not_found' =>  __( 'No Books Found', ‘GABSVN’ ),
+        'not_found_in_trash' => __( 'No Books found in Trash', ‘GABSVN’ ),
        );
 
 
@@ -60,4 +60,4 @@ function kinsta_register_post_type() {
 
 
 }
-add_action( 'init', 'kinsta_register_post_type' );
+add_action( 'init', 'GABSVN_register_post_type' );

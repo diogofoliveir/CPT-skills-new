@@ -3,9 +3,9 @@
 
 /*
 
-Plugin Name: CELINEdashboard Register Custom Post Types
+Plugin Name: CELINE dashboard Register Custom Post Types
 Plugin URI: http://realise.com
-Description: Plugin to register the GABSVN post type
+Description: céline Plugin to register the GABSVN post type
 Version: 600.0
 Author: Gabriel_FDS
 Author URI:http://realise.ch

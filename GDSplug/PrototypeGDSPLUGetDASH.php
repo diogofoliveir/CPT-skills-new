@@ -6,7 +6,7 @@
 Plugin Name: PrototypeGDS_PLUG_et_DASH CPT Register
 Plugin URI: http://realise.com
 Description: Plugin to register the GABSVN post type
-Version: 300.0
+Version: 30220.0
 Author: Gabriel_FDS
 Author URI:http://realise.ch
 Textdomain: GABSVN
@@ -61,7 +61,7 @@ add_action('init', 'register_cpt_produit', 10);
 
 
 //==============================================================
-// GABSVN in WP - Shortcode For Image
+// GABSVN in WP - Shortcode For Image RÉALISE
 //==============================================================
  
 function GABSVN_image_shortcode($attr){
@@ -116,10 +116,6 @@ add_shortcode('GABSVN-button', 'GABSVN_button_shortcode');
 //==============================================================
 // CLEOPATRA in WP - Shortcode For Button
 //==============================================================
-
-
-
-
 function ma_fonction(){     
 
 //le code de ma fonction    

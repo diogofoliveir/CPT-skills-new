@@ -7,7 +7,7 @@
 Plugin Name: Register Custom Post Types GABSVN
 Plugin URI: http://realise.com
 Description: Plugin to register the GABSVN post type
-Version: 10.0
+Version: 10101.0
 Author: Gabriel_FDS
 Author URI:http://realise.com
 Textdomain: GABSVN
