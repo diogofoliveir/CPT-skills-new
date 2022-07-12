@@ -280,7 +280,7 @@ register_taxonomy('Savoir-faire','CTP',array(
  
 // Now register the non-hierarchical taxonomy like tag
  
-register_taxonomy('Savoir être','CTP',array(
+register_taxonomy ('Savoir être','CTP',array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -426,6 +426,7 @@ wp_reset_postdata();
     </div>
 </div>';
 }
+<<<<<<< Updated upstream:portfolio/fonction/ctp.php
 add_shortcode('zlatan', 'shortcode_bienvenue');
 
 ?>
@@ -477,3 +478,7 @@ foreach ($postslist as $post) :  setup_postdata($post); ?>
         </ul>
     </div>  <!-- end last-article -->
 </div> <!-- end news -->
+=======
+
+
+>>>>>>> Stashed changes:ctp/ctp.php
